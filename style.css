@@ -6,7 +6,7 @@ body{
     width: 100%;
     height: 100%;
     overflow-x: hidden;/*Evita el desplaz. horiz.*/
-    background-color: #191414;
+    /*background-color: #191414;*/
 
 }
 /*#search-box {
