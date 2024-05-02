@@ -201,8 +201,8 @@ header nav a.activo {
 	position: relative;
 }
 
-.peliculas-terror .contenedor-secundario .flecha-izquierda,
-.peliculas-terror .contenedor-secundario .flecha-derecha {
+.peliculas-terror .contenedor-secundario .flecha-izquierda-secundaria,
+.peliculas-terror .contenedor-secundario .flecha-derecha-secundaria {
 	position: absolute;
 	border: none;
 	background: rgba(0,0,0,0.3);
@@ -217,16 +217,16 @@ header nav a.activo {
 	transition: .2s ease all;
 }
 
-.peliculas-terror .contenedor-secundario .flecha-izquierda:hover,
-.peliculas-terror .contenedor-secundario .flecha-derecha:hover {
+.peliculas-terror .contenedor-secundario .flecha-izquierda-secundaria:hover,
+.peliculas-terror .contenedor-secundario .flecha-derecha-secundaria:hover {
 	background: rgba(0,0,0, .9);
 }
 
-.peliculas-terror .contenedor-secundario .flecha-izquierda {
+.peliculas-terror .contenedor-secundario .flecha-izquierda-secundaria {
 	left: 0;
 }
 
-.peliculas-terror .contenedor-secundario .flecha-derecha {
+.peliculas-terror .contenedor-secundario .flecha-derecha-secundaria {
 	right: 0;
 }
 
@@ -297,6 +297,18 @@ header nav a.activo {
     margin-inline:auto;
 }
 
+.footer--contenedor{
+	padding: 10px;
+    font-weight: 900;
+    text-align: center;
+}
+.iconossociales li {
+	display: inline;
+	padding: 50px;
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
 .informacion{
     display: grid;
     color: rgb(133, 133, 133);
@@ -311,6 +323,7 @@ header nav a.activo {
     color: white;
     padding: 8px;
     font-weight: 700;
+	text-align: center;
 }
 .contruccion{
     color: white;
@@ -318,6 +331,69 @@ header nav a.activo {
     font-weight: 900;
     text-align: center;
 }
+
+
+/*Mi Lista*/
+
+
+.contenedormilista {
+	width: 95%;
+	margin: auto;
+}
+.image-list{
+	margin-bottom: 60px;
+}
+
+.image-list {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.custom-image{
+	width: 100%;
+	padding: 10px 0px;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.custom-image {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.custom-image {
+	min-width: 100%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.image-list img {
+	width: 100%;
+	vertical-align: top;
+	transition: transform 0.3s ease;
+}
+
+.custom-image:hover {
+	transform: scale(1.2);
+	transform-origin: center;
+  }
+
+.contenedor-titulo-milista {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.contenedor-titulo-milista h3 {
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+}
+
+.contenedor-titulo-milista{
+	margin-bottom: 30px;
+} 
 
 /* Media query */
 
