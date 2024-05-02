@@ -130,6 +130,7 @@ header nav a.activo {
 	display: flex;
 	justify-content: space-between;
 	align-items: end;
+}
 
 .contenedor-titulo-controles2 h3 {
 	color: #fff;
