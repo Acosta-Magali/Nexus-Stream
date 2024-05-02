@@ -126,6 +126,30 @@ header nav a.activo {
 	background: #1DB954;
 }
 
+.contenedor-titulo-controles2 {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+
+.contenedor-titulo-controles2 h3 {
+	color: #fff;
+	font-size: 30px;
+}
+
+.contenedor-titulo-controles2 .indicadores2 button {
+	background: #fff;
+	height: 3px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+
+.contenedor-titulo-controles2 .indicadores2 button:hover,
+.contenedor-titulo-controles2 .indicadores2 button.activo {
+	background: #1DB954;
+}
+
 /* Contenedor Principal y Flechas  */
 .peliculas-recomendadas {
 	margin-bottom: 70px;
@@ -166,6 +190,46 @@ header nav a.activo {
 	right: 0;
 }
 
+.peliculas-terror {
+	margin-bottom: 70px;
+}
+
+.peliculas-terror .contenedor-secundario {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.peliculas-terror .contenedor-secundario .flecha-izquierda,
+.peliculas-terror .contenedor-secundario .flecha-derecha {
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0,0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+.peliculas-terror .contenedor-secundario .flecha-izquierda:hover,
+.peliculas-terror .contenedor-secundario .flecha-derecha:hover {
+	background: rgba(0,0,0, .9);
+}
+
+.peliculas-terror .contenedor-secundario .flecha-izquierda {
+	left: 0;
+}
+
+.peliculas-terror .contenedor-secundario .flecha-derecha {
+	right: 0;
+}
+
+
 /*  Carousel  */
 .peliculas-recomendadas .contenedor-carousel {
 	width: 100%;
@@ -191,6 +255,34 @@ header nav a.activo {
 }
 
 .peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
+	width: 100%;
+	vertical-align: top;
+}
+
+.peliculas-terror .contenedor-carousel2 {
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.peliculas-terror .contenedor-carousel2 .carousel2 {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.peliculas-terror .contenedor-carousel2 .carousel2 .pelicula-terror {
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.peliculas-terror .contenedor-carousel2 .carousel2 .pelicula-terror.hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.peliculas-terror .contenedor-carousel2 .carousel2 .pelicula-terror img {
 	width: 100%;
 	vertical-align: top;
 }
