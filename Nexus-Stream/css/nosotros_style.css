@@ -1,0 +1,31 @@
+.container{
+    text-align: center;
+    background-color: #22812f;
+}
+/*#0f831e*/
+.parrafos{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+#Nexus-Stream_img{
+    width: 20px;
+    height: 100px;
+}
+.box_aliados{
+    background-color: black;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    gap: 50px 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 50px;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px;
+  }
+
+  .box_item > img{
+    width: 300px;
+    height: 250px;
+  }
