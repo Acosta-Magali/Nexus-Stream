@@ -39,12 +39,53 @@ header .logotipo {
 header nav a {
 	color: #AAA;
 	text-decoration: none;
-	margin-right: 20px;
+	margin: 0 10px;
+	
+	/*margin-right: 20px;*/
+
 }
 
 header nav a:hover,
 header nav a.activo {
 	color: #1DB954;
+}
+
+.fa-magnifying-glass {
+    margin-right: 10px;
+    /* Espacio entre el ícono y el texto */
+}
+#search-box {
+    background-color: #191414;
+    color: #ffffff;
+    display: flex;
+	align-items: center;
+    padding: 10px;
+}
+
+#search-input {
+    flex-grow: 1;
+    margin-right: 5px;
+    padding: 5px 10px;
+    color: #ffffff;
+    background-color: #191414;
+    border: none;
+}
+
+#search-button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: flex;
+    /*Alinea ícono y texto dentro del botón */
+    align-items: center;
+}
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px; 
+   
 }
 
 /*  Pelicula Principal  */
