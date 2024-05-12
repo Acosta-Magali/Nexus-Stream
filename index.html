@@ -7,75 +7,47 @@
     <link rel="icon" type="image/png" sizes="32x16" href="IMAGE/NSs.ico">
     <script src="https://kit.fontawesome.com/b0a0ec86fc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
-	<title>NEXUS-STREAM2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <title>NEXUS-STREAM2</title>
 
 </head>
 
 <body>
     <header>
-        
+        <section id="search-box">
+            <i class="fa-solid fa-magnifying-glass" style="margin-right: 10px;"></i> <!-- Lupa-->
+            <input type="text" id="search-input" placeholder="Buscar películas...">
+        </section>
         <nav>
             <ul>
                 <li>
-                    <a href="#inicio">Inicio</a>
-                </li>
-                <li>
-                    <a href="#categorias">Categorías</a>
-                </li>
-                <li>
-                    <a href="#suscripcion">Suscripción</a>
-                </li>
-                <li>
                     <a href="#videoinicio">Presentación</a>
                 </li>
-                <li>
-                    <a href="./nosotros.html">Sobre Nosotros</a>
-                </li>
-                
+
             </ul>
         </nav>
     </header>
-
-    <section id="search-box">
-        <i class="fa-solid fa-magnifying-glass" style="margin-right: 10px;"></i> <!-- Lupa-->
-        <input type="text" id="search-input" placeholder="Buscar películas...">
-    </section>
-
-    <section id="video-container">
-        <video autoplay loop muted playsinline>
+    <div class="video-container">
+        <video autoplay loop muted>
             <source src="IMAGE/BLACK FRIDAY..mp4" type="video/mp4">
-            Tu navegador no soporta videos HTML5.
+            Tu navegador no soporta video HTML5.
         </video>
-    </section>
+        <div class="overlay" id="darken">
 
+        </div>
+        <img src="IMAGE/NS.png" class="animated-image" id="animateMe">
+    </div>
 
-    <section id="inicio" class="tab-content active">
-        <h2>Inicio</h2>
-        <p>Contenido de la página de inicio.</p>
-    </section>
-    <section id="categorias" class="tab-content">
-        <h2>Categorías</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur accusantium enim labore non ea. </p>
-
-    </section>
-
-
-    <section id="milista" class="tab-content">
-        <h2>Mi Lista</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aut autem nesciunt mollitia ipsa optio vitae
-            rerum ut quo nobis, suscipit soluta. Iste, sit non minima aperiam fugiat magni voluptates.</p>
-
-    </section>
-    <footer>
-        <p>Copyright &copy; 2024</p>
-        integrantes G8
-        Milagros
-        Aisu
-        Magalí
-        Pablo
-    </footer>
-
+    <script>
+        window.onload = function () {
+            var img = document.getElementById('animateMe');
+            var overlay = document.getElementById('darken');
+            img.style.opacity = 1;
+            img.style.transform = 'translate(-50%, -50%) scale(1)'; // Escala a tamaño normal
+            overlay.style.opacity = 0.99; // fondo oscuro//
+        };
+    </script>
 </body>
 
 </html>

@@ -1,15 +1,64 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.video-container {
+    position: relative;
     width: 100%;
     height: 100%;
-    overflow-x: hidden;/*Evita el desplaz. horiz.*/
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Cubre el contenedor c/sus proporciones */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    /* Inicialmente transparente */
+    transition: opacity 10s ease;
+    /* Transición suave de la opacidad */
+}
+
+.animated-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    /* Centrado y escalado a 0 */
+    opacity: 0;
+    /* Transparente */
+    transition: opacity 10s ease, transform 10s ease;
+    /* Transiciones suaves */
+
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    /*Evita el desplaz. horiz.*/
     background-color: #191414;
 
 }
-nav ul{
+
+nav ul {
     margin: 30px;
     list-style: none;
     display: flex;
@@ -22,7 +71,7 @@ nav ul li a {
     color: #ffffff;
     padding: 10px 15px;
     background-color: #191414;
-    
+
 }
 
 nav ul li a:hover {
@@ -31,12 +80,13 @@ nav ul li a:hover {
 }
 
 #search-box {
-   
+
     position: relative;
     width: 300px;
     margin: 0px;
 
 }
+
 #search-input {
     width: 100%;
     padding: 10px;
@@ -45,21 +95,28 @@ nav ul li a:hover {
 }
 
 #search-input {
-    background-color: #191414;  /* Establece el color de fondo a negro */
-    color: #ffffff;  /* Cambia el color del texto a blanco para que se pueda leer */
+    background-color: #191414;
+    /* Establece el color de fondo a negro */
+    color: #ffffff;
+    /* Cambia el color del texto a blanco para que se pueda leer */
 }
+
 #search-box {
     background-color: #191414;
     color: #ffffff;
-    display: flex; /*flexbox alinea elem internos */
-    
-    align-items: center; /*Centra elem verticalmente */
+    display: flex;
+    /*flexbox alinea elem internos */
+
+    align-items: center;
+    /*Centra elem verticalmente */
     padding: 10px;
 }
 
 #search-input {
-    flex-grow: 1; /* el input tome la mayoría del espacio */
-    margin-right: 5px; /* Espacio entre input y botón */
+    flex-grow: 1;
+    /* el input tome la mayoría del espacio */
+    margin-right: 5px;
+    /* Espacio entre input y botón */
     padding: 5px 10px;
     color: #ffffff;
     background-color: #333;
@@ -72,19 +129,22 @@ nav ul li a:hover {
     border: none;
     padding: 5px 10px;
     cursor: pointer;
-    display: flex; /*Alinea ícono y texto dentro del botón */
+    display: flex;
+    /*Alinea ícono y texto dentro del botón */
     align-items: center;
 }
 
 .fa-magnifying-glass {
-    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    margin-right: 10px;
+    /* Espacio entre el ícono y el texto */
 }
 
 
 #video-container {
     width: 100%;
     position: relative;
-    padding-top: 56.25%; /* Rel aspecto 16:9 */
+    padding-top: 56.25%;
+    /* Rel aspecto 16:9 */
 }
 
 #video-container video {
@@ -94,4 +154,12 @@ nav ul li a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .animated-image {
+        max-width: 80%;
+        /* D móviles */
+        max-height: 80%;
+    }
 }
