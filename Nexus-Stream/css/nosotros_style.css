@@ -1,16 +1,35 @@
 .container{
-    text-align: center;
     background-color: #22812f;
 }
 /*#0f831e*/
-.parrafos{
+.texto{
+    justify-content: left;
     padding-left: 100px;
     padding-right: 100px;
   }
-#Nexus-Stream_img{
-    width: 20px;
-    height: 100px;
+  p,h1,h2,h3,li{
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  p,li{
+    font-size: 1.25rem;
+  }
+
+#img_div{
+  text-align: center;
 }
+#nexus-stream{
+   width: 35%;
+   height: 35%;
+}
+
 .box_aliados{
     background-color: black;
     margin-left: 50px;
