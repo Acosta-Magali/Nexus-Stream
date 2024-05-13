@@ -436,6 +436,10 @@ nav {
 	margin-bottom: 30px;
 } 
 
+a {
+	text-decoration: none;
+	}
+
 /* Media query */
 
 @media (min-width:400px) {
