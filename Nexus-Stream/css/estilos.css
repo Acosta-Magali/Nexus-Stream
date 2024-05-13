@@ -78,7 +78,6 @@ header nav a.activo {
     padding: 5px 10px;
     cursor: pointer;
     display: flex;
-    /*Alinea ícono y texto dentro del botón */
     align-items: center;
 }
 nav {
@@ -88,7 +87,6 @@ nav {
    
 }
 
-/*  Pelicula Principal  */
 .pelicula-principal {
 	font-size: 16px;
 	min-height: 40.62em;
@@ -141,7 +139,6 @@ nav {
 	margin-right: 1.25em;
 }
 
-/*  Contenedor Titulo y Controles  */
 .contenedor-titulo-controles {
 	display: flex;
 	justify-content: space-between;
