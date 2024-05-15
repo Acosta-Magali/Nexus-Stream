@@ -7,18 +7,21 @@
     padding-left: 100px;
     padding-right: 100px;
   }
-  p,h1,h2,h3,li{
+  .texto->p,.texto->h1,.texto->h2,.texto->h3,.texto->li{
     font-family: "Sedan SC", serif;
     font-weight: 400;
     font-style: normal;
   }
-  h1{
+  .texto->b{
+    font-family: "Sedan SC", serif;
+  }
+  .texto->h1{
     font-size: 3rem;
   }
-  h2{
+  .texto->h2{
     font-size: 2rem;
   }
-  p,li{
+  .texto->p,.texto->li{
     font-size: 1.25rem;
   }
 
@@ -49,6 +52,4 @@
     height: 250px;
   }
 
-  a {
-    text-decoration: none;
-    }
+    

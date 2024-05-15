@@ -352,12 +352,15 @@ nav {
 }
 .informacion{
     display: grid;
-    color: rgb(133, 133, 133);
+    color: rgb(133, 133, 133); 
     gap: 20px;
     margin-block:20px;
     font-size: 15px;
 }
-.informacion p:hover{
+.informacion a{
+	color: rgb(133, 133, 133); 
+}
+.informacion p:hover,a:hover{
     color: white;
 }
 .idioma{
