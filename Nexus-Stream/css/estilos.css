@@ -93,7 +93,7 @@ nav {
 	font-size: 16px;
 	min-height: 40.62em;
 	color: #fff;
-	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/img-inicio.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/img-inicio.jpg);
 	background-position: center center;
 	background-size: cover;
 	margin-bottom: 3.12em;
@@ -141,6 +141,21 @@ nav {
 	margin-right: 1.25em;
 }
 
+.perfiles .boton {
+	background:none;
+	border: none;
+	border-radius: 0.21em;
+	padding: 0.83em 1.77em;
+	color: #fff;
+	margin-right: none;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1em;
+	-webkit-border-radius: 0.11em;
+	-moz-border-radius: 0.11em;
+	-ms-border-radius: 0.11em;
+	-o-border-radius: 0.11em;
+}
 /*  Contenedor Titulo y Controles  */
 .contenedor-titulo-controles {
 	display: flex;
