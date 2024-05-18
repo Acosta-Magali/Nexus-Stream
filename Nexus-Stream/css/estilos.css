@@ -1,5 +1,6 @@
 :root {
 	--verde: #1DB954;
+	--verde2: #4DBA65;
 	--fondo: #141414;
 }
 
@@ -11,6 +12,11 @@
 
 body {
 	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+}
+
+main .perfiles {
+	background: var(--verde2);
 	font-family: 'Open Sans', sans-serif;
 }
 
