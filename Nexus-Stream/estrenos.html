@@ -4,8 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/estilos.css">
-	<link rel="icon" type="image/png" sizes="32x16" href="IMAGE/NSs.ico">
+	<link rel="stylesheet" href="css/estrenos.css">
+	<link rel="icon" type="image/png" sizes="32x16" href="../IMAGE/NSs.ico">
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
 	<title>Estrenos</title>
 </head>
 <body>
@@ -15,19 +17,114 @@
 			<nav>
 				<a href="index.html">Inicio</a>
 				<a href="#">Buscar</a>
-				<a href="#">Perfiles</a>
+				<a href="perfiles.html">Perfiles</a>
 				<a href="milista.html">Mi lista</a>
 				<a href="estrenos.html" class="activo">Estrenos</a>
-				<a href="nostros.html">Sobre Nosotros</a>
+				<a href="nosotros.html">Sobre Nosotros</a>
 			</nav>
 		</div>
 	</header>
+<main>
+	<div class="peliculas-estreno contenedor">
+		<div class="contenedor-titulo-controles">
+			<h3>Películas de estreno</h3>
+			<div class="indicadores"></div>
+		</div>
+		<div class="contenedor-principal">
+			<button role="button" id="flecha-izquierda" class="flecha-izquierda"><i
+					class="fas fa-angle-left"></i></button>
+			<div class="contenedor-carousel">
+				<div class="carousel">
+					<div class="pelicula">
+						<a href="#"><img src="img/estrenos/internacional-furiosa.jpg" alt="Furiosa: Mad Max"></a>
+					</div>
+					<div class="pelicula">
+						<a href="#"><img src="img/estrenos/internacional-Planet-of-the-Apes.jpg" alt="Kingdom of Apes"></a>
+					</div>
+					<div class="pelicula">
+						<a href="#"><img src="img/estrenos/internacional-inside-out-2.jpg" alt="Inside out 2"></a>
+					</div>
+					<div class="pelicula">
+						<a href="#"><img src="img/estrenos/internacional-poor-things.jpg" alt="Poor Things"></a>
+					</div>
+					<div class="pelicula">
+						<a href="#"><img src="img/estrenos/internacional-deadpool3.jpg" alt="Deadpool 3"></a>
+					</div>
+					<div class="pelicula">
+						<a href="#"><img src="img/estrenos/internacional-joker-2.jpg" alt="Joker 2"></a>
+					</div>
+					<div class="pelicula">
+						<a href="#"><img src="img/estrenos/internacional-transformers-rise-of-the-beasts-2.jpg" alt="Transformers"></a>
+					</div>
+					<div class="pelicula">
+						<a href="#"><img src="img/estrenos/internacional-mufasa.jpg" alt="Mufasa"></a>
+					</div>
+					<div class="pelicula">
+						<a href="#"><img src="img/estrenos/internacional-venom-3.jpg" alt="Venom 3"></a>
+					</div>
+					<div class="pelicula">
+						<a href="#"><img src="img/estrenos/nacional-puan.jpg" alt="Puan"></a>
+					</div>
+					<div class="pelicula">
+						<a href="#"><img src="img/estrenos/cuando-acecha.jpg" alt="Cuando acecha la maldad"></a>
+					</div>
+					<div class="pelicula">
+						<a href="#"><img src="img/estrenos/anatomia-caida.jpg" alt="Anatomía de una caída"></a>
+					</div>
+					<div class="pelicula">
+						<a href="#"><img src="img/estrenos/night-swim.jpg" alt="Night swim"></a>
+					</div>
+				</div>
+			</div>
 
-	
+			<button role="button" id="flecha-derecha" class="flecha-derecha"><i
+					class="fas fa-angle-right"></i></button>
+		</div>
+	</div>
 
-    <script src="https://kit.fontawesome.com/c7a2d1184c.js" crossorigin="anonymous"></script>
-	<script src="js/main.js"></script>
+	<div class="series contenedor">
+		<div class="contenedor-titulo-controles2">
+			<h3>Series para maratonear</h3>
+			<div class="indicadores2"></div>
+		</div>
 
+		<div class="contenedor-secundario">
+			<button role="button" id="flecha-izquierda-secundaria" class="flecha-izquierda-secundaria"><i
+					class="fas fa-angle-left"></i></button>
+			<div class="contenedor-carousel2">
+				<div class="carousel2">
+					<div class="series">
+						<a href="#"><img src="img/estrenos/series-spacey-unmasked.jpg" alt="Spacey Unmasked"></a>
+					</div>
+					<div class="series">
+						<a href="#"><img src="img/estrenos/serie-felices-los-6.jpg" alt="Felices los 6"></a>
+					</div>
+					<div class="series">
+						<a href="#"><img src="img/estrenos/serie-baby-reindeer.jpg" alt="Bebé reno"></a>
+					</div>
+					<div class="series">
+						<a href="#"><img src="img/estrenos/serie-caso-asunta.jpg" alt="Caso Asunta"></a>
+					</div>
+					<div class="series">
+						<a href="#"><img src="img/estrenos/serie-house-of-the-dragon.jpg" alt="House of the Dragon"></a>
+					</div>
+					<div class="series">
+						<a href="#"><img src="img/estrenos/serie-the-boys.jpg" alt="The Boys"></a>
+					</div>
+					<div class="series">
+						<a href="#"><img src="img/estrenos/serie-beetlejuice.jpg" alt="Beetlejuice"></a>
+					</div>
+				</div>
+			</div>
+			<button role="button" id="flecha-derecha-secundaria" class="flecha-derecha-secundaria"><i
+				class="fas fa-angle-right"></i></button>
+	</div>
+</div>
+</main>
+
+<script src="https://kit.fontawesome.com/b0a0ec86fc.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/c7a2d1184c.js" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 		<footer class="footer">
 			<div class="footer--contenedor">
 				<ul class="iconossociales">
@@ -37,23 +134,22 @@
 					<li><a href="#"><i class="fa-brands fa-linkedin"></i>Linkedin</a></li>
 				</ul>
 				<div class="informacion">
-					<p>Preguntas frecuentes</p>
+					<a href="nosotros.html#preguntasFrecuentes"><p>Preguntas frecuentes</p></a>
 					<p>Prensa</p>
 					<p>Formas de ver</p>
 					<p>Preferencias de cookies</p>
 					<p>Pruebas de velocidad</p>
 					<p>Centro de ayuda</p>
 					<p>Relaciones con inversionistas</p>
-					<p>Terminos de uso</p>
-					<p>Informacion corporativa</p>
+					<a href="nosotros.html#terminosDeUso"><p>Terminos de uso</p></a>
+					<a href="nosotros.html#informacionCorporativa"><p>Informacion corporativa</p></a>
 					<p>Cuenta</p>
 					<p>Empleo</p>
 					<p>Privacidad</p>
 					<p>Contactanos</p>
-					<p>Solo en netflix</p>
 				</div>
 				<p class="idioma">🌎︎ Español</p>
-				<p class="contruccion">@Equipo8 2024</p>
+				<p class="contruccion">@Equipo 8 2024</p>
 			</div>
 		</footer>
 </body>

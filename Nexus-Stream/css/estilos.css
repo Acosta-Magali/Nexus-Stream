@@ -1,5 +1,6 @@
 :root {
 	--verde: #1DB954;
+	--verde2: #4DBA65;
 	--fondo: #141414;
 }
 
@@ -11,6 +12,11 @@
 
 body {
 	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+}
+
+main .perfiles {
+	background: var(--verde2);
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -91,7 +97,7 @@ nav {
 	font-size: 16px;
 	min-height: 40.62em;
 	color: #fff;
-	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/img-inicio.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../img/img-inicio.jpg);
 	background-position: center center;
 	background-size: cover;
 	margin-bottom: 3.12em;
@@ -139,6 +145,25 @@ nav {
 	margin-right: 1.25em;
 }
 
+<<<<<<< HEAD
+=======
+.perfiles .boton {
+	background:none;
+	border: none;
+	border-radius: 0.21em;
+	padding: 0.83em 1.77em;
+	color: #fff;
+	margin-right: none;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1em;
+	-webkit-border-radius: 0.11em;
+	-moz-border-radius: 0.11em;
+	-ms-border-radius: 0.11em;
+	-o-border-radius: 0.11em;
+}
+/*  Contenedor Titulo y Controles  */
+>>>>>>> d69eb7f73b4218d72c898c8a6289345a8b7a3e8f
 .contenedor-titulo-controles {
 	display: flex;
 	justify-content: space-between;
@@ -349,12 +374,15 @@ nav {
 }
 .informacion{
     display: grid;
-    color: rgb(133, 133, 133);
+    color: rgb(133, 133, 133); 
     gap: 20px;
     margin-block:20px;
     font-size: 15px;
 }
-.informacion p:hover{
+.informacion a{
+	color: rgb(133, 133, 133); 
+}
+.informacion p:hover,a:hover{
     color: white;
 }
 .idioma{
@@ -432,6 +460,10 @@ nav {
 .contenedor-titulo-milista{
 	margin-bottom: 30px;
 } 
+
+a {
+	text-decoration: none;
+	}
 
 /* Media query */
 

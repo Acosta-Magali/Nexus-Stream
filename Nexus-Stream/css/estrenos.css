@@ -1,0 +1,187 @@
+/*  Contenedor Titulo y Controles  */
+.contenedor-titulo-controles {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.contenedor-titulo-controles h3 {
+	color: #fff;
+	font-size: 30px;
+}
+
+.contenedor-titulo-controles .indicadores button {
+	background: #fff;
+	height: 3px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo {
+	background: #1DB954;
+}
+
+.contenedor-titulo-controles2 {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.contenedor-titulo-controles2 h3 {
+	color: #fff;
+	font-size: 30px;
+}
+
+.contenedor-titulo-controles2 .indicadores2 button {
+	background: #fff;
+	height: 3px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+
+.contenedor-titulo-controles2 .indicadores2 button:hover,
+.contenedor-titulo-controles2 .indicadores2 button.activo {
+	background: #1DB954;
+}
+
+/* Contenedor Principal y Flechas  */
+.peliculas-estreno {
+	margin-bottom: 70px;
+}
+
+.peliculas-estreno .contenedor-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.peliculas-estreno .contenedor-principal .flecha-izquierda,
+.peliculas-estreno .contenedor-principal .flecha-derecha {
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0,0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+.peliculas-estreno .contenedor-principal .flecha-izquierda:hover,
+.peliculas-estreno .contenedor-principal .flecha-derecha:hover {
+	background: rgba(0,0,0, .9);
+}
+
+.peliculas-estreno .contenedor-principal .flecha-izquierda {
+	left: 0;
+}
+
+.peliculas-estreno .contenedor-principal .flecha-derecha {
+	right: 0;
+}
+
+.series {
+	margin-bottom: 70px;
+}
+
+.series .contenedor-secundario {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.series .contenedor-secundario .flecha-izquierda-secundaria,
+.series .contenedor-secundario .flecha-derecha-secundaria {
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0,0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+.series .contenedor-secundario .flecha-izquierda-secundaria:hover,
+.series .contenedor-secundario .flecha-derecha-secundaria:hover {
+	background: rgba(0,0,0, .9);
+}
+
+.series .contenedor-secundario .flecha-izquierda-secundaria {
+	left: 0;
+}
+
+.series .contenedor-secundario .flecha-derecha-secundaria {
+	right: 0;
+}
+
+
+/*  Carousel  */
+.peliculas-estreno .contenedor-carousel {
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.peliculas-estreno .contenedor-carousel .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.peliculas-estreno .contenedor-carousel .carousel .pelicula {
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.peliculas-estreno .contenedor-carousel .carousel .pelicula.hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.peliculas-estreno .contenedor-carousel .carousel .pelicula img {
+	width: 100%;
+	vertical-align: top;
+}
+
+.series .contenedor-carousel2 {
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.series .contenedor-carousel2 .carousel2 {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.series .contenedor-carousel2 .carousel2 .series {
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.series .contenedor-carousel2 .carousel2 .series.hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.series .contenedor-carousel2 .carousel2 .series img {
+	width: 100%;
+	vertical-align: top;
+}
