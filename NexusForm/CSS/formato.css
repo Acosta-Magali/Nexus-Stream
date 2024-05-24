@@ -1,0 +1,142 @@
+html{
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+}
+.fondoacceso{
+    background-image: url(/images/inicio\ sesión.png);
+}
+.fondosusc{
+    background-image: url(/images/Suscripcion.png);
+}
+.fondoacceso2{
+    background-image: url(/images/fondo\ inicio.jpeg);
+}
+
+h1{
+    color: rgb(29, 185, 84);
+}
+h2 {
+    color:#1db954;
+}
+.logotipo{
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em rgba(0, 0, 0, 0.518),
+    0 0 0.2em rgb(79, 79, 95);
+}
+#botoncitos{
+
+    border: none;
+    color: #ffffff;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color:#1db954; /* Color base del botón */
+    transition: box-shadow 0.3s ease-in-out; /* Transición suave del efecto de sombra */
+    font-size: medium;
+}
+.cuerpito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #000000;
+    opacity: 70%;
+    padding-left: 10%;
+}
+html.fondosusc body main div.cuerpito form.formulario fieldset div.plan div#planes{
+    display: flex;
+   
+border: 5px;
+background-color:rgb(0, 0, 0);
+justify-content: space-between;
+
+}
+#cabecera2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start
+}
+.cabezal{
+    display: flex;
+    flex-wrap: wrap;
+}
+#botoncitos > button:nth-child(1) {
+        cursor: pointer;
+        border: transparent;
+        background-color: transparent;
+        height: 50px;
+        width: 200px;
+        font-size: 1.5em;
+      }
+.tarjetazo label{
+display: block;
+margin-bottom: 5px;
+font-size: 16px;
+}
+#email,
+#password,
+.campospersonales label,
+.campospersonales input,
+.tarjetazo input,
+.tarjetazo select,
+.tarjetazo button {
+    border: 2px;
+    font-size: 18px;
+    height: 30px;
+    width: 50%;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+/* footer */
+.footer{
+    padding-top: 20px;
+    background-color: black;
+}
+.footer--contenedor{
+    width: 95%;
+    margin-inline:auto;
+}
+
+.footer--contenedor{
+	padding: 10px;
+    font-weight: 900;
+    text-align: center;
+}
+.iconossociales li {
+	display: inline;
+	padding: 50px;
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+.informacion{
+    display: grid;
+    color: rgb(133, 133, 133); 
+    gap: 20px;
+    margin-block:20px;
+    font-size: 15px;
+}
+.informacion a{
+	color: rgb(133, 133, 133); 
+}
+.informacion p:hover,a:hover{
+    color: white;
+}
+.idioma{
+    color: white;
+    padding: 8px;
+    font-weight: 700;
+	text-align: center;
+}
+.contruccion{
+    color: white;
+    padding: 10px;
+    font-weight: 900;
+    text-align: center;
+}

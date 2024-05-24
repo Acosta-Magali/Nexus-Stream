@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html class="fondosusc" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete sus Datos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/formato.css"/>
+    <link rel="icon" sizes="32x16" href="/image/NSs.ico" />
+</head>
+<body>
+    <header> 
+        <div class="contenedor">
+			<h2 class="logotipo">Nexus-Stream</h2>
+            
+		</div>
+
+    </header>
+
+    <main >
+        <div class="cuerpito">
+        <H1>Bien, solo falta un paso más!</H1>
+    <form class="formulario">
+        <fieldset>
+            <div class="campospersonales">
+                <div>
+                <label for="datosNyA"> Ingrese su nombre: </label>
+                <input type="text" value="Nombre"></div>
+                <div><label for="datosNyA"> Ingrese su apellido: </label>
+                 <input type="text" value="Apellido"></div>
+             </div>
+           <div>
+            <label for="fechaNac"> Ingrese fecha de nacimiento: </label>
+             <input type="date">
+             <label for="Domicilio"> Ingrese su país de residencia </label>
+             <select name="selectpais">
+                <option value="value1">Argentina</option>
+                <option value="value2" selected>Uruguay</option>
+                <option value="value3">Chile</option>
+              </select>
+            </div>
+        </fieldset>
+        <fieldset > 
+           <div class="plan">
+            <div id="cabecera2">
+                <h2>Selecciona tu plan</h2>
+                <p class="subtextito"> Sin compromisos, cancela cuando quieras. <br>
+                Todo NexusStream a tu disposición a muy bajo costo. <br>
+                Disfruta ilimitadamente en todos tus dispositivos. 
+             </div>        
+            </p>
+            <div id="planes">
+            <div class="PlanP">
+                <h2>Premium</h2>
+                <p> 4K + HDR              </p>
+                <h3>Precio mensual</h3>
+                <p>$4299</p>
+                <h3> Calidad de sonido </h3>
+                <p> Optima</p>
+                <h3> Resolución </h3>
+                <p> 4k (Ultra HD)</p>
+                <h3> Audio espacial (sonido inmersivo) </h3>
+                <p> Incluido</p>
+                <h3> Dispositivos compatibles </h3>
+                <p> Tv, Computadora, telefono, tablet</p>
+                <h3> Dispositivos simultaneos  </h3>
+                <p>6</p>
+                <input type="radio" name="planes">
+            </div>
+            <Div class="planE">
+                <h2>Estándar</h2>
+                <p> 1080 p              </p>
+                <h3>Precio mensual</h3>
+                <p>$3299</p>
+                <h3> Calidad de sonido </h3>
+                <p> Excelente</p>
+                <h3> Resolución </h3>
+                <p> 1080 p (Full HD)</p>
+                <h3> Dispositivos compatibles </h3>
+                <p> Tv, Computadora, telefono, tablet</p>
+                <h3> Dispositivos simultaneos  </h3>
+                <p>4</p>
+                <input type="radio" name="planes">
+            </Div>
+            <div class="planB">
+                <h2>Basico</h2>
+                <p> 720 p              </p>
+                <h3>Precio mensual</h3>
+                <p>$2299</p>
+                <h3> Calidad de sonido </h3>
+                <p> bueno</p>
+                <h3> Resolución </h3>
+                <p> 720 (Full HD)</p>
+                <h3> Dispositivos compatibles </h3>
+                <p> Tv, Computadora, telefono, tablet</p>
+                <h3> Dispositivos simultaneos  </h3>
+                <p>2</p>
+                <input type="radio" name="planes">
+            </div>
+             </div>
+             </div>  
+        </fieldset>
+        <fieldset>
+            <script src="JS/funciontarjeta.js"></script>
+            <div class="tarjetazo">
+                <h2 class="expira">Configura tu tarjeta de crédito</h2>
+                    <label for="tarjetita">Numero de tarjeta</label>
+                 <input type="text"  maxlength="19">
+                    <div class="gruposelecfecha">
+                        <label for="selectmes">Fecha de expiración</label>
+                        <select name="mes" id="selectmes">
+                            <option disabled selected>Mes</option>
+                        </select>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="gruposelecfecha">
+                        <select name="anio" id="selectanio">
+                            <option disabled selected>Año</option>
+                        </select>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div>
+                        <label for="CVV" class="cvv"> CVV </label>
+                        <input type="text" value="CVV" maxlength="3" id ="cvv">
+                    </div>
+                <div>
+                    <label for="image"> Introduce una foto del anverso de tu DNI para corroborar tu identidad</label>
+                    <input type="file" accept="image"></div>
+               <div>
+                    <label for="bases">Acepta las <a href="basesycondiciones.html">bases y condiciones</a> </label>
+                    <input type="checkbox">
+                 </div> 
+                </div>
+                <button type="submit" id="botoncitos"> <a href="signin.html">Aceptar</a> </button>
+        </fieldset>
+    </form> 
+    </div>
+    </main>
+    
+
+
+</body>
+</html>
