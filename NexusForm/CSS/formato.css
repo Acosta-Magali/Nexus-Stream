@@ -4,13 +4,13 @@ html{
     font-style: normal;
 }
 .fondoacceso{
-    background-image: url(/images/inicio\ sesión.png);
+    background-image: url(/NexusForm/images/inicio\ sesión.png);
 }
 .fondosusc{
-    background-image: url(/images/Suscripcion.png);
+    background-image: url(/NexusForm/images/Suscripcion.png);
 }
 .fondoacceso2{
-    background-image: url(/images/fondo\ inicio.jpeg);
+    background-image: url(/NexusForm/images/fondo\ inicio.jpeg);
 }
 
 h1{

@@ -16,7 +16,7 @@
 
        
 
-                window.open('/completatusdatos.html')
+                window.open('/NexusForm/completatusdatos.html')
 
             }
 
