@@ -21,21 +21,17 @@
     <main >
         <div class="cuerpito">
     <H1>Crea tu cuenta</H1>
-    <form action="">
+    <form action="/api/signup" method="POST">
        <div> 
         <label for="email">Ingresa tu email:</label>
-        <input id="email" type="email"  required>
+        <input id="email" type="email" name="email" required>
         </div>
-        <br>
         <div>
         <label for="password">Ingresa tu contraseña:</label>
-        <input id="password" type="password" class="pass" name="pass" minlength="8" required value="" required>
+        <input id="password" name="password" type="password" class="pass" minlength="8" required>
        </div>
        <br>
-       <div><button id="botoncitos" onclick="testInputs()">Continuar</button></div>
-
-       
-    </script>
+       <div><button type=submit id="botoncitos" onclick="testInputs()">Continuar</button></div>
     </form>
         </div>
     </main>
