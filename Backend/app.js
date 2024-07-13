@@ -62,11 +62,11 @@ app.post('/api/signin', (req,res) => {
 })
 
 app.put('/api/cambiar_datos', (req,res) => {
-	if (req.body.email && req.body.new_email){
-		let email = req.body.email;
-		let new_email = req.body.new_email;
+	if (req.body.password && req.body.new_email){
+		let password = crypto.createHash('md5').update(req.body.password).digest('hex');
+		let new_email = req.body.email;
 
-		db.run('UPDATE sessions SET email = ? WHERE email = ?', [new_email, email], (err, row) => {
+		db.run('UPDATE sessions SET email = ? WHERE password = ?', [new_email, password], (err, row) => {
 			if (err){
 				console.log(err);
 				res.status(500).json({status: "Error cambiando datos"});
