@@ -48,27 +48,36 @@ app.post('/api/signin', (req,res) => {
 	if(req.body.email && req.body.password){
 		let password = crypto.createHash('md5').update(req.body.password).digest('hex');
 		let email = req.body.email;
-		console.log(email);
-
-		db.get('SELECT * FROM sessions WHERE email = ?', [email], (err, row) =>{
+		db.get('SELECT * FROM sessions WHERE email = ? AND password = ?', [email, password], (err, row) =>{
 			if(err){
 				console.log(err);
 				res.status(401).json({status:"Error al iniciar sesion"})
-			} else {
-				console.log(row);
-				res.status(200).json({status:"funca"})
+			} else if (row) {
+				let cookie = row.cookie;
+				res.cookie('session', cookie);
+				res.redirect('/Nexus-Stream/index.html')
 			}
 		})
 	}
 })
 
+app.put('/api/cambiar_datos', (req,res) => {
+	if (req.body.email && req.body.new_email){
+		let email = req.body.email;
+		let new_email = req.body.new_email;
 
+		db.run('UPDATE sessions SET email = ? WHERE email = ?', [new_email, email], (err, row) => {
+			if (err){
+				console.log(err);
+				res.status(500).json({status: "Error cambiando datos"});
+			} else {
+				res.status(200).json({status: "Datos actualizados correctamente!"});
+			}
+		})
+	}
 
-
-
-
-
-
+	
+})
 
 app.listen(port, () => {
 	console.log(`La app esta corriendo en el puerto ${port}`);
